@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_invoice_list_view</fullName>
+    <columns>NAME</columns>
+    <filterScope>Mine</filterScope>
+    <label>My invoice list view</label>
+    <sharedTo>
+        <role>CRM</role>
+    </sharedTo>
+</ListView>

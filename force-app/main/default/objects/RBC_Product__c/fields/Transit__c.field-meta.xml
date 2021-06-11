@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transit__c</fullName>
+    <externalId>false</externalId>
+    <label>Transit</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>08915</fullName>
+                <default>false</default>
+                <label>08915</label>
+            </value>
+            <value>
+                <fullName>99400</fullName>
+                <default>false</default>
+                <label>99400</label>
+            </value>
+            <value>
+                <fullName>93000</fullName>
+                <default>false</default>
+                <label>93000</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
