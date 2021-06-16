@@ -7,9 +7,10 @@ public class Employee {
         
     }
     
+    
     public Employee(String name, integer empid, String dept) {
-        eid = empId;
         eName = Name;
+        eid = empId;
         eDept = dept;
     }
     
@@ -17,14 +18,12 @@ public class Employee {
         return eName;
     }
     
-    public integer getEmployeeId() {
+     public integer getEmployeeId() {
         return eid;
     }
     
     public string getEmployeeDept() {
         return eDept;
     }
-
-
     
 }

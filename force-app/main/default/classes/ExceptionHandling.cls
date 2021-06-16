@@ -3,15 +3,10 @@ public class ExceptionHandling {
         try {
             System.debug(a/b);
             
-        } catch (MathException e) {
-            System.debug('devide by 0');
-        } catch (NullPointerException e) {
-
         } catch (Exception e) {
-            
-        }
-        finally {
-            System.debug('Result');
+            System.debug('devide by 0');
+        } finally {
+            System.debug('finally block');
         }
     }
 }
