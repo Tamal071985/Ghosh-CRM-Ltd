@@ -7,6 +7,7 @@ public class Employees extends Persons{
         super(fname, lname, a, gen);
         vEmployeeId = eid;
         vDepartment = dept;
+        //tamal version 1
     }
 
     public void printEmployee() {
