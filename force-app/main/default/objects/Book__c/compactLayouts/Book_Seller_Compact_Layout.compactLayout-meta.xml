@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Book_Seller_Compact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>Writer_Name__c</fields>
+    <fields>Book_Stock__c</fields>
+    <fields>Purchase_Price__c</fields>
+    <fields>OwnerId</fields>
+    <label>Book Seller Compact Layout</label>
+</CompactLayout>

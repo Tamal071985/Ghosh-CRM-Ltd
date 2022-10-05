@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Book__c</entityName>
+    <fieldName>Age_Group__c</fieldName>
+    <masterLabel>Book Seller</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Age_Group__c</fieldNames>
+        <fieldNames>Name</fieldNames>
+        <fieldNames>BookId__c</fieldNames>
+        <fieldNames>CreatedById</fieldNames>
+        <fieldNames>Purchase_Price__c</fieldNames>
+        <picklistValueName>18+</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Above_Eighteen</recordTypeName>
+</PathAssistant>

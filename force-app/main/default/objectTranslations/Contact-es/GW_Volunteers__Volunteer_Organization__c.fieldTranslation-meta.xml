@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>La organización, empresa o grupo de contacto se ofrecen como voluntarios en nombre de.</help>
+    <label></label>
+    <name>GW_Volunteers__Volunteer_Organization__c</name>
+</CustomFieldTranslation>

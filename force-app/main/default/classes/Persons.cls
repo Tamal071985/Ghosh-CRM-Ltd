@@ -1,10 +1,13 @@
 public abstract class Persons {
 
-    public String firstName; 
-    public String lastName ; 
-    public Integer age; 
-    public String gender;
+    protected String firstName {get; set;} 
+    protected String lastName {get; set;} 
+    protected Integer age {get; set;}  
+    protected String gender {get; set;} 
 
+    public Persons() {
+        
+    }
     public Persons(string fname, string lname, Integer a, String gen) {
         firstname = fname; 
         lastName = lname ;
@@ -13,7 +16,9 @@ public abstract class Persons {
         if (gen.length() > 1 ) {
             throw new IllegalArgumentException('Gender must be \'M\' or \'F\'');
         }
-        gender =gen; 
+        gender = gen; 
     }
+    
+    public abstract void printDetails() ;
 
 }

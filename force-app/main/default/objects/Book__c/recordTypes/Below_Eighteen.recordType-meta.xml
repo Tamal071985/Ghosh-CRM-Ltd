@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Below_Eighteen</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Book_Seller_Compact_Layout</compactLayoutAssignment>
+    <label>Below Eighteen</label>
+    <picklistValues>
+        <picklist>Age_Group__c</picklist>
+        <values>
+            <fullName>Below 18</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Category__c</picklist>
+        <values>
+            <fullName>Biography</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comic book</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dictionary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fairytale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fiction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Graphic novel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>History</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Math</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Picture book</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sports and leisure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Young adult</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -8,7 +8,7 @@ public class CollectionDemo1 {
         
         system.debug(elist);
     }
-    
+    //hello
     public void printEmp() {
         for (Employee a: elist) {
             system.debug(a.getEmployeeDept());

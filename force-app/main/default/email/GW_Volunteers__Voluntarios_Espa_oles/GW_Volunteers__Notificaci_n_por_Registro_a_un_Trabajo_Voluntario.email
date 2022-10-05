@@ -1,0 +1,18 @@
+Se ha producido un nuevo registro a un trabajo o jornada 
+
+{!Contact.FirstName} {!Contact.LastName}
+
+Aquí está el link a ese registro: 
+{!Contact.Link}
+{!Lead.Link}
+
+Trabajo: 
+{!GW_Volunteers__Volunteer_Hours__c.GW_Volunteers__Volunteer_Job__c}
+{!GW_Volunteers__Volunteer_Job__c.Link}
+
+Jornada:
+{!GW_Volunteers__Volunteer_Hours__c.GW_Volunteers__Volunteer_Shift__c}
+{!GW_Volunteers__Volunteer_Hours__c.GW_Volunteers__Shift_Start_Date_Time__c}
+{!GW_Volunteers__Volunteer_Shift__c.Link}
+
+Por favor sígalo a la mayor brevedad.

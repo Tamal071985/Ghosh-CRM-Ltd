@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SLA_Check_when_Billing_Country_Is_India</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND ( 
+  UPPER(  BillingCountry  ) = &quot;INDIA&quot;,
+   ISBLANK(TEXT(  SLA__c ))
+ )</errorConditionFormula>
+    <errorDisplayField>SLA__c</errorDisplayField>
+    <errorMessage>SLA must be selected when Billing Country is India</errorMessage>
+</ValidationRule>

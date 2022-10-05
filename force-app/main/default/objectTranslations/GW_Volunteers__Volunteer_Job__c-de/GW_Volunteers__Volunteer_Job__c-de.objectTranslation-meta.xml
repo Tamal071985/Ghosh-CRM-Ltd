@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Schicht des Freiwilligen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Freiwilligenaufträge</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Schicht des Freiwilligen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Freiwilligenaufträge</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Schicht des Freiwilligen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Freiwilligenaufträge</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Schicht des Freiwilligen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Freiwilligenaufträge</value>
+    </caseValues>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Name der Freiwillegenarbeit</nameFieldLabel>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>GW_Volunteers__ValidateExternalSignupUrl</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>GW_Volunteers__Find_Volunteers</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GW_Volunteers__JobRoster</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GW_Volunteers__Job_Shift_Calendar</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GW_Volunteers__Mass_Edit_Volunteer_Hours</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GW_Volunteers__Mass_Email_Volunteers</name>
+    </webLinks>
+</CustomObjectTranslation>

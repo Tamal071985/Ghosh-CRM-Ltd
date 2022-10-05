@@ -1,0 +1,18 @@
+<apex:page standardController="Account" lightningStylesheets="True">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection Title="Account Management {!$User.FirstName}" rendered="True">                
+                <apex:inputField label="My Accout name" value="{!Account.Name}"/>
+                <apex:inputField value="{!Account.Phone}"/>
+                <apex:inputField value="{!Account.Fax}"/>
+                <apex:inputField value="{!Account.My_Test_Field__c}"/>                           
+            </apex:pageBlockSection>  
+            
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!save}"/>
+                <apex:commandButton value="Cancel" action="{!cancel}"/>
+            </apex:pageBlockButtons>  
+        </apex:pageBlock>
+     </apex:form>
+     <apex:detail relatedList="false"/>
+</apex:page>

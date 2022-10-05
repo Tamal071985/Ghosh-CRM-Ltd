@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Invoice_going_to_be_over_due</fullName>
+        <description>Invoice going to be over due</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SUPPORTSelfServiceNewCommentNotificationSAMPLE</template>
+    </alerts>
+    <alerts>
+        <fullName>Test</fullName>
+        <description>Test</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>myselftamal@gmail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SupportEscalatedCaseNotification</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Update_Satus</fullName>
+        <field>Status__c</field>
+        <literalValue>Overdue</literalValue>
+        <name>Update Satus</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_inv_to_overdue</fullName>
+        <description>Update invoice status to over due</description>
+        <field>Status__c</field>
+        <literalValue>Overdue</literalValue>
+        <name>Update inv to overdue</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Update Over due invoice</fullName>
+        <active>false</active>
+        <formula>AND 
+(Invoice_Date__c  &lt; TODAY(),
+  TEXT( Status__c )  = &quot;Draft&quot;
+)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Update_inv_to_overdue</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Invoice_R__c.Invoice_Date__c</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+</Workflow>

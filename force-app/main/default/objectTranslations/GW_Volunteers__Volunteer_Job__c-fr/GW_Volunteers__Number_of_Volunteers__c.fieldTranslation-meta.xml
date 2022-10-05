@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Le nombre total de bénévoles dont le Statut d&apos;Heures = Complété ou Confirmé.</help>
+    <label></label>
+    <name>GW_Volunteers__Number_of_Volunteers__c</name>
+</CustomFieldTranslation>
