@@ -160,7 +160,11 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Merchandises</pluralLabel>
-    <searchLayouts></searchLayouts>
+    <searchLayouts>
+        <customTabListAdditionalFields>Merchandise_Desc__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Merchandise_Price__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Merchandise_Stock__c</customTabListAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

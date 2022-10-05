@@ -1,0 +1,6 @@
+Hi {!Lead.FirstName},
+
+Thanks for showing interest. Our sells rep will get in touch shortly 
+
+Thanks and Regards 
+{!Lead.OwnerFirstName}

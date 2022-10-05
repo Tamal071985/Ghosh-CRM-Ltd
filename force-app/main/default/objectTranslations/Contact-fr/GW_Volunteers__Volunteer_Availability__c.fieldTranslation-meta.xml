@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>GW_Volunteers__Volunteer_Availability__c</name>
+    <picklistValues>
+        <masterLabel>Afternoon</masterLabel>
+        <translation>Après-midi</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Morning</masterLabel>
+        <translation>Matin</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Weekdays</masterLabel>
+        <translation>Semaine</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Weekends</masterLabel>
+        <translation>Weekend</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Weekly</masterLabel>
+        <translation>Hebdomadaire</translation>
+    </picklistValues>
+</CustomFieldTranslation>

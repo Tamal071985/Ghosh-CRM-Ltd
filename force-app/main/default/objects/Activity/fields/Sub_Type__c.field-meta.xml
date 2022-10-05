@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub-Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Call A</fullName>
+                <default>false</default>
+                <label>Call A</label>
+            </value>
+            <value>
+                <fullName>Call B</fullName>
+                <default>false</default>
+                <label>Call B</label>
+            </value>
+            <value>
+                <fullName>Call C</fullName>
+                <default>false</default>
+                <label>Call C</label>
+            </value>
+            <value>
+                <fullName>Send Letter A</fullName>
+                <default>false</default>
+                <label>Send Letter A</label>
+            </value>
+            <value>
+                <fullName>Send Letter B</fullName>
+                <default>false</default>
+                <label>Send Letter B</label>
+            </value>
+            <value>
+                <fullName>Send Letter C</fullName>
+                <default>false</default>
+                <label>Send Letter C</label>
+            </value>
+            <value>
+                <fullName>Commincate</fullName>
+                <default>false</default>
+                <label>Commincate</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Call</controllingFieldValue>
+            <valueName>Call A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Call</controllingFieldValue>
+            <valueName>Call B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Call</controllingFieldValue>
+            <valueName>Call C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Letter</controllingFieldValue>
+            <valueName>Send Letter A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Letter</controllingFieldValue>
+            <valueName>Send Letter B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Letter</controllingFieldValue>
+            <valueName>Send Letter C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Communicate</controllingFieldValue>
+            <valueName>Commincate</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,18 @@
+<apex:page standardController="Contact" title="My Custome Contact Page" recordSetVar="cnt">
+    <apex:form >
+        <apex:pageBlock >
+        <apex:pageBlockSection >
+            <apex:pageBlockTable value="{!cnt}" var="c">
+            <apex:column value="{!c.name}"/>
+            <apex:column value="{!c.title}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlockSection>
+        <apex:pageBlockButtons >
+            <apex:commandButton value="first" action="{!first}"/>
+            <apex:commandButton value="last" action="{!last}"/>
+            <apex:commandButton value="previous" action="{!previous}"/>
+            <apex:commandButton value="next" action="{!next}"/>
+        </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

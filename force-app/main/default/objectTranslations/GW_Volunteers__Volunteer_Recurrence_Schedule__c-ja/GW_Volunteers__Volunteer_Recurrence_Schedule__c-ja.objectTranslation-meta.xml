@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ボランティアの定期的なスケジュール</value>
+    </caseValues>
+    <fieldSets>
+        <label></label>
+        <name>GW_Volunteers__NewAndEditVRSFS</name>
+    </fieldSets>
+    <nameFieldLabel>VRS 身元</nameFieldLabel>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>GW_Volunteers__VRS_Days_of_Week_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>GW_Volunteers__VRS_Weekly_Occurrence_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

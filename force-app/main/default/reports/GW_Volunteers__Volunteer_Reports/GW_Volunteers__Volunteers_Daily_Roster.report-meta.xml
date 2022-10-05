@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>GW_Volunteers__Volunteer_Job__c$GW_Volunteers__Campaign__c</field>
+    </columns>
+    <columns>
+        <field>GW_Volunteers__Volunteer_Job__c$Name</field>
+    </columns>
+    <columns>
+        <field>GW_Volunteers__Volunteer_Job__c.GW_Volunteers__Volunteer_Job_Slots__r$Name</field>
+    </columns>
+    <columns>
+        <field>GW_Volunteers__Volunteer_Job__c.GW_Volunteers__Volunteer_Job_Slots__r.GW_Volunteers__Volunteer_Hours__r$GW_Volunteers__Planned_Start_Date_Time__c</field>
+    </columns>
+    <columns>
+        <field>GW_Volunteers__Volunteer_Job__c.GW_Volunteers__Volunteer_Job_Slots__r.GW_Volunteers__Volunteer_Hours__r$GW_Volunteers__Contact__c</field>
+    </columns>
+    <columns>
+        <field>GW_Volunteers__Volunteer_Job__c.GW_Volunteers__Volunteer_Job_Slots__r.GW_Volunteers__Volunteer_Hours__r$GW_Volunteers__Status__c</field>
+    </columns>
+    <columns>
+        <field>GW_Volunteers__Volunteer_Job__c.GW_Volunteers__Volunteer_Job_Slots__r.GW_Volunteers__Volunteer_Hours__r$GW_Volunteers__Number_of_Volunteers__c</field>
+    </columns>
+    <description>A list of all upcoming Volunteers by day</description>
+    <filter>
+        <criteriaItems>
+            <column>GW_Volunteers__Volunteer_Job__c.GW_Volunteers__Volunteer_Job_Slots__r.GW_Volunteers__Volunteer_Hours__r$GW_Volunteers__Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>No-Show,Canceled</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>GW_Volunteers__Volunteer_Job__c.GW_Volunteers__Volunteer_Job_Slots__r.GW_Volunteers__Volunteer_Hours__r$GW_Volunteers__Shift_Start_Date_Time__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Volunteers Daily Roster</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>GW_Volunteers__Volunteer_Jobs_with_Shifts_Hours__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>GW_Volunteers__Volunteer_Job__c.GW_Volunteers__Volunteer_Job_Slots__r.GW_Volunteers__Volunteer_Hours__r$GW_Volunteers__Planned_Start_Date_Time__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>GW_Volunteers__Volunteer_Job__c.GW_Volunteers__Volunteer_Job_Slots__r$GW_Volunteers__Start_Date_Time__c</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

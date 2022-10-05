@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Ingrese detalles adicionales en este campo (por ejemplo: indicaciones de cómo llegar a un lugar o la URL de un mapa). Se incluirán en los correos electrónicos recordatorios enviados de manera automática.</help>
+    <label></label>
+    <name>GW_Volunteers__Location_Information__c</name>
+</CustomFieldTranslation>
