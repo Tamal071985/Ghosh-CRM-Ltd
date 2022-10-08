@@ -23,3 +23,5 @@ public abstract class AbstractDemo {
         System.debug('Hello World'); 
     }
 }
+
+//end of abstract 
