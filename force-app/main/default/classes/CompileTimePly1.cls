@@ -7,4 +7,8 @@ public class CompileTimePly1 {
     public void fun(integer a, integer b) {
 		system.debug('two arg fun');        
     }
+
+    public void fun() {
+      system.debug('No arg fun');        
+      }
 }
