@@ -22,7 +22,11 @@ public class Cal {
     }
        public void doDiv() {
         a = 10 ; b = 10;
-        res = (double)a / b ;
+        if (b == 0) {
+            res = 0.0 ;
+        } else 
+            res = (double)a / b ;
+        
         System.debug('Division is='+res);
     }
 }
