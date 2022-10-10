@@ -18,7 +18,7 @@ node {
     println CONNECTED_APP_CONSUMER_KEY
    // def toolbelt = tool name: 'toolbelt', type: 'com.cloudbees.jenkins.plugins.customtools.CustomTool'
 	
-    //def toolbelt = tool 'toolbelt'
+    def toolbelt = tool 'sfdx'
 	
     //println 'Toolbelt' 
     //println toolbelt
@@ -33,7 +33,7 @@ node {
             if (isUnix()) {
             rc = sh returnStatus: true, script: "sfdx force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile ${jwt_key_file} -d --instanceurl ${SFDC_HOST}"
         } else {
-            rc = bat returnStatus: true, script: "C:\Program Files (x86)\sfdx\bin\sfdx force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile \"${jwt_key_file}\" -d --instanceurl ${SFDC_HOST}"
+            rc = bat returnStatus: true, script: "\"${toolbelt}\" sfdx force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile \"${jwt_key_file}\" -d --instanceurl ${SFDC_HOST}"
         }
 
         if (rc != 0) {
@@ -47,7 +47,7 @@ node {
 			if (isUnix()) {
 				rmsg = sh returnStdout: true, script: "${toolbelt} force:mdapi:deploy -d manifest/. -u ${HUB_ORG}"
 			}else{
-			   rmsg = bat returnStdout: true, script: "C:\Program Files (x86)\sfdx\bin\sfdx force:mdapi:deploy -d manifest/. -u ${HUB_ORG}"
+			   rmsg = bat returnStdout: true, script: "sfdx force:mdapi:deploy -d manifest/. -u ${HUB_ORG}"
 			}
 			  
             printf rmsg
