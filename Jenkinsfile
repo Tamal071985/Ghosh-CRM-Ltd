@@ -18,10 +18,10 @@ node {
     println CONNECTED_APP_CONSUMER_KEY
    // def toolbelt = tool name: 'toolbelt', type: 'com.cloudbees.jenkins.plugins.customtools.CustomTool'
 	
-    def toolbelt = tool 'toolbelt'
+    //def toolbelt = tool 'toolbelt'
 	
-    println 'Toolbelt' 
-    println toolbelt
+    //println 'Toolbelt' 
+    //println toolbelt
     
     stage('checkout source') {
         // when running in multi-branch job, one must issue this command
