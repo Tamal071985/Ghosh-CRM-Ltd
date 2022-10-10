@@ -2392,19 +2392,6 @@
     <name>SharingRules</name>
   </types>
   <types>
-    <members>ExerciseFiles</members>
-    <members>GW_Volunteers__Bootstrap</members>
-    <members>GW_Volunteers__Bootstrap4Force</members>
-    <members>GW_Volunteers__FullCalendar</members>
-    <members>GW_Volunteers__jQueryFiles</members>
-    <members>GW_Volunteers__sfdo213</members>
-    <members>GW_Volunteers__v4sStaticResources</members>
-    <members>GW_Volunteers__wtooltip</members>
-    <members>SiteSamples</members>
-    <members>test</members>
-    <name>StaticResource</name>
-  </types>
-  <types>
     <members>Account</members>
     <members>Asset</members>
     <members>Book__c</members>
