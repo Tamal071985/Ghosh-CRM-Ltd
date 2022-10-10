@@ -16,8 +16,8 @@ node {
     println HUB_ORG
     println SFDC_HOST
     println CONNECTED_APP_CONSUMER_KEY
-    def toolbelt = tool 'toolbelt'
-
+    def toolbelt = tool name: 'toolbelt', type: 'com.cloudbees.jenkins.plugins.customtools.CustomTool'
+    
     stage('checkout source') {
         // when running in multi-branch job, one must issue this command
         checkout scm
