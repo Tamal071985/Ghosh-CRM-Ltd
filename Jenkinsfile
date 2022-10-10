@@ -19,7 +19,7 @@ node {
     def toolbelt = tool name: 'toolbelt', type: 'com.cloudbees.jenkins.plugins.customtools.CustomTool'
 	
     println 'Toolbelt' 
-    println "\"${toolbelt}\"
+    println toolbelt
     
     stage('checkout source') {
         // when running in multi-branch job, one must issue this command
